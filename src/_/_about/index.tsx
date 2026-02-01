@@ -1,10 +1,9 @@
-function About() {
+function AboutPage() {
 	return (
 		<>
-			<h1>Обо мне</h1>
-			<h2>Как я работаю</h2>
+			<h1>О нас</h1>
 		</>
 	);
 }
 
-export const element = <About />;
+export const element = <AboutPage />;

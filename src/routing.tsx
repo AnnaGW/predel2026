@@ -18,6 +18,18 @@ const routes = [
 				path: AppRoute.About,
 				lazy: () => import('./_/_about'),
 			},
+			{
+				path: AppRoute.Services,
+				lazy: () => import('./_/_services'),
+			},
+			{
+				path: AppRoute.Contacts,
+				lazy: () => import('./_/_contacts'),
+			},
+			{
+				path: AppRoute.Partners,
+				lazy: () => import('./_/_partners'),
+			},
 		],
 	},
 ];
