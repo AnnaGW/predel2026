@@ -1,14 +1,19 @@
+import { Outlet } from 'react-router-dom';
 import s from './styles.module.css';
 
-function Main() {
+function MainLayout() {
 	return (
 		<>
 			<div className={s.bgFixed}></div>
 			<main className={s.startContainer}>
-				<section className={s.start}>Главная страница ООО Предел</section>
+				<section className={s.start}>
+					<p>Хедер</p>
+					<Outlet />
+					<p>Футер</p>
+				</section>
 			</main>
 		</>
 	);
 }
 
-export const element = <Main />;
+export const element = <MainLayout />;

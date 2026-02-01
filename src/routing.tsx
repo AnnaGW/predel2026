@@ -9,10 +9,16 @@ const routes = [
 		path: '/',
 		errorElement: <Error404 />,
 		lazy: () => import('./_'),
-	},
-	{
-		path: AppRoute.About,
-		lazy: () => import('./_/_about'),
+		children: [
+			{
+				path: AppRoute.MainPage,
+				lazy: () => import('./_/_main-page'),
+			},
+			{
+				path: AppRoute.About,
+				lazy: () => import('./_/_about'),
+			},
+		],
 	},
 ];
 
