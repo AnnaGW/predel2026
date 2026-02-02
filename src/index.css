@@ -17,8 +17,7 @@
 }
 
 :root {
-	/* font-family: "Vollkorn", system-ui, Avenir, Helvetica, Arial, sans-serif; */
-	font-family: 'Vollkorn', Arial, sans-serif;
+	font-family: Arial, Verdana, sans-serif; /*Verdana, Impact*/
 	line-height: 1.5;
 	font-weight: 400;
 	width: 100vw;
@@ -40,13 +39,18 @@
 	--secondary-font-color: rgb(204, 204, 204);
 
 	--main-bg-color: rgb(83, 75, 59);
+	--secondary-bg-color: rgb(168, 160, 144);
+	--bg-color-3: rgb(42, 38, 30);
+	--border-color: rgb(212, 205, 191);
 
 	--current-link-color: rgb(102, 102, 102);
 	--link-color: rgb(68, 68, 68);
 
+	--border-radius: 5px;
+
 }
 
-@font-face {
+/* @font-face {
 	font-style: normal;
 	font-weight: normal;
 	font-family: 'Vollkorn';
@@ -64,7 +68,7 @@
 	src:
 		local('Vollkorn Italic'),
 		url('../public/fonts/Vollkorn-Italic.woff2') format('woff2');
-}
+} */
 
 .visuallyHidden {
 	position: absolute;
@@ -85,6 +89,7 @@ body {
 	height: 100vh;
 	margin: 0;
 	padding: 0;	
+	overflow-x: hidden;
 }
 
 #root {
