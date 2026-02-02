@@ -1,5 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import s from './styles.module.css';
+import { Header } from '~/els/@header';
+import { Footer } from '~/els/@footer';
 
 function MainLayout() {
 	return (
@@ -7,9 +9,9 @@ function MainLayout() {
 			<div className={s.bgFixed}></div>
 			<main className={s.startContainer}>
 				<section className={s.start}>
-					<p>Хедер</p>
+					<Header />
 					<Outlet />
-					<p>Футер</p>
+					<Footer />
 				</section>
 			</main>
 		</>
