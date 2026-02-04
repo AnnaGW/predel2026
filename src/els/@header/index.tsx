@@ -5,9 +5,10 @@ import { Logo } from '../logo';
 export const Header = (): ReactElement => {
 	return (
 		<header className={s.mainHeader}>
-			<div className={s.topPart}></div>
-			<div className="container">
-				<Logo />
+			<div className={s.topPart}>
+				<div className="container">
+					<Logo />
+				</div>
 			</div>
 		</header>
 	);
