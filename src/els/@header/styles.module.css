@@ -1,0 +1,11 @@
+.mainHeader {
+  height: 100px;
+  background-color: var(--secondary-bg-color);
+}
+
+.mainTitle {
+  font-family: Impact, Arial, sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--secondary-font-color);
+}
