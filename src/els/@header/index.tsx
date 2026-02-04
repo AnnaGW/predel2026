@@ -1,10 +1,14 @@
 import type { ReactElement } from 'react';
 import s from './styles.module.css';
+import { Logo } from '../logo';
 
 export const Header = (): ReactElement => {
 	return (
 		<header className={s.mainHeader}>
-			<h1 className={s.mainTitle}>ПРЕДЕЛ</h1>
+			<div className={s.topPart}></div>
+			<div className="container">
+				<Logo />
+			</div>
 		</header>
 	);
 };

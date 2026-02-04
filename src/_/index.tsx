@@ -7,11 +7,9 @@ function MainLayout() {
 	return (
 		<>
 			<div className={s.bgFixed}></div>
-			<div className={s.container}>
-				<Header />
-				<Outlet />
-				<Footer />
-			</div>
+			<Header />
+			<Outlet />
+			<Footer />
 		</>
 	);
 }
