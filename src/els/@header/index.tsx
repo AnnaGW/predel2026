@@ -37,7 +37,6 @@ export const Header = (): ReactElement => {
 	const [isMobMenuOpen, setIsMobMenuOpen] = useState<boolean>(true);
 
 	useEffect(() => {
-		console.log(window);
 		if (
 			window.innerWidth <= 480 &&
 			window.screen.orientation.type === 'portrait-primary'
@@ -48,6 +47,18 @@ export const Header = (): ReactElement => {
 
 	const menuToggleClickHandler = () => {
 		setIsMobMenuOpen(!isMobMenuOpen);
+	};
+
+	//обрабатываем resize и изменение ориентации
+	screen.orientation.onchange = () => {
+		if (
+			window.innerWidth <= 480 &&
+			window.screen.orientation.type === 'portrait-primary'
+		) {
+			setIsMobMenuOpen(false);
+		} else {
+			setIsMobMenuOpen(true);
+		}
 	};
 
 	return (
