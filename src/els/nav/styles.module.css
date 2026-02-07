@@ -23,10 +23,17 @@
   padding: 0 20px;
 }
 
+.mainNavLink:hover {
+  color: var(--secondary-font-color);
+}
+
 .activeLink {
-  /* color: var(--current-link-color); */
-  /* text-decoration: underline; */
   font-weight: 900;
+  cursor: default;
+}
+
+.activeLink:hover {
+  color: inherit;
 }
 
 .invisible {
