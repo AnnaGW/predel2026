@@ -1,10 +1,11 @@
 import { useEffect, useState, type ReactElement } from 'react';
-import s from './styles.module.css';
+import { useLocation } from 'react-router-dom';
 import { Logo } from '../logo';
 import { cn } from '../@common/cn';
 import { MainNav } from '../nav';
 import { AppRoute } from '~/const';
-import { useLocation } from 'react-router-dom';
+
+import s from './styles.module.css';
 
 export const Header = (): ReactElement => {
 	const url = useLocation();

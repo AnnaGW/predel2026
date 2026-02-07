@@ -1,0 +1,7 @@
+.mainFooter {
+  width: 100%;
+  padding: 20px 0;
+  color: var(--secondary-font-color);
+  background-color: var(--bg-color-3);
+}
+
