@@ -5,11 +5,15 @@ import { cn } from '../@common/cn';
 
 export type MainNavProps = {
 	currentPage: AppRoute;
+	isOpen: boolean;
 };
 
-export const MainNav = ({ currentPage }: MainNavProps): ReactElement => {
+export const MainNav = ({
+	currentPage,
+	isOpen = true,
+}: MainNavProps): ReactElement => {
 	return (
-		<div className={s.mainNavWrap}>
+		<div className={cn(s.mainNavWrap, { [s.invisible]: !isOpen })}>
 			<ul className={s.mainNav}>
 				<li className={s.mainNavItem}>
 					<a

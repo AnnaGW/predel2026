@@ -25,11 +25,34 @@
 
 .activeLink {
   /* color: var(--current-link-color); */
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-weight: 900;
+}
+
+.invisible {
+  display: none;
 }
 
 @media (orientation: portrait) and (max-width: 480px) {
-  .mainNavWrap {
-    display: none;
+  .mainNavWrap {    
+    padding: 0;
+    background-color: var(--menu-toggle-bg);
+    border-radius: var(--border-radius);
   }
+
+  .mainNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainNavItem {
+    font-size: 2.5rem;
+    border: none;
+  }
+
+  .mainNavLink {
+    padding: 20px;
+    text-align: right;
+  }
+
 }

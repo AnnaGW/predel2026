@@ -34,6 +34,22 @@ export const Header = (): ReactElement => {
 		}
 	}, [url]);
 
+	const [isMobMenuOpen, setIsMobMenuOpen] = useState<boolean>(true);
+
+	useEffect(() => {
+		console.log(window);
+		if (
+			window.innerWidth <= 480 &&
+			window.screen.orientation.type === 'portrait-primary'
+		) {
+			setIsMobMenuOpen(false);
+		}
+	}, []);
+
+	const menuToggleClickHandler = () => {
+		setIsMobMenuOpen(!isMobMenuOpen);
+	};
+
 	return (
 		<header className={s.mainHeader}>
 			<div className={s.topPart}>
@@ -41,10 +57,13 @@ export const Header = (): ReactElement => {
 					<div className={s.headerInnerWrap}>
 						<Logo />
 						<div className={s.headerNavWrap}>
-							<MainNav currentPage={currentPage} />
+							<MainNav currentPage={currentPage} isOpen={isMobMenuOpen} />
 						</div>
 					</div>
-					<button className={cn(s.menuToggle)}>
+					<button
+						className={cn(s.menuToggle, { [s.isActive]: isMobMenuOpen })}
+						onClick={menuToggleClickHandler}
+					>
 						<span className={s.hamburger}></span>
 					</button>
 				</div>
