@@ -45,7 +45,10 @@ html {
 	--main-bg-color: rgb(83, 75, 59);
 	--bg-color-2: rgb(168, 160, 144);
 	--bg-color-3: rgb(42, 38, 30); /* --color_15 #2a261e*/
+	--bg-color-4: rgb(200, 200, 200); /* */
+
 	--border-color: rgb(212, 205, 191);
+
 
 	--current-link-color: rgb(102, 102, 102); /* #666666 */
 	--link-color: rgb(68, 68, 68); /* #444444 */
