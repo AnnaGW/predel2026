@@ -5,3 +5,11 @@ export enum AppRoute {
 	Partners = '/partners',
 	Contacts = '/contacts',
 }
+
+export enum Pages {
+	MainPage = 'Главная',
+	About = 'О нас',
+	Services = 'Услуги',
+	Partners = 'Наши партнеры',
+	Contacts = 'Контакты',
+}

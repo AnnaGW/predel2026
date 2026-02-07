@@ -1,0 +1,35 @@
+.mainNavWrap {
+  padding: 20px 0;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  color: var(--link-color);
+}
+
+.mainNavItem {
+  
+  border-right: 1px solid var(--bg-color-3);
+  cursor: pointer;
+}
+
+.mainNavItem:last-child {
+  border: none;
+}
+
+.mainNavLink {
+  display: block;
+  padding: 0 20px;
+}
+
+.activeLink {
+  /* color: var(--current-link-color); */
+  text-decoration: underline;
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .mainNavWrap {
+    display: none;
+  }
+}

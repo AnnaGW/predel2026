@@ -9,6 +9,16 @@
   border-bottom: 4px solid var(--bg-color-3);
 }
 
+.headerInnerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.headerNavWrap {
+  height: 66px;  
+}
+
 .menuToggle {
   display: none;
 }
