@@ -1,0 +1,74 @@
+.intro {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.callUs {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 245px;  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Impact, Arial, sans-serif;
+  text-align: center;
+  line-height: 1;
+  color: var(--secondary-font-color);
+  background-color: var(--main-bg-color);
+  border-radius: var(--border-radius);  
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
+}
+
+.callUs::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 170px;
+  height: 50px;
+  background-image: url("./img/thread.png");
+  transform: translateX(-50%);
+  /* border-top: 2px solid var(--bg-color-3);
+  border-left: 2px solid var(--bg-color-3);
+  transform: rotate(45deg); */
+}
+
+.phone {
+  font-size: 58px;
+  font-weight: 900;
+  
+}
+
+.phoneNumber {  
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.mail {
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+.help {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;  
+  color: var(--secondary-font-color);
+  background-color: var(--bg-color-3);  
+}
+
+.helpHeadline {
+  font-family: Impact, Arial, sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  text-decoration: underline;
+}
+
+.helpDescr {
+  padding: 3px;
+  padding-left: 10px;
+}

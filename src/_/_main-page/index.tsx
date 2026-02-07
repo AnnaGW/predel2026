@@ -1,8 +1,29 @@
+import fitters from './img/fitters.avif';
+import s from './styles.module.css';
+
 export function MainPage() {
 	return (
-		<>
-			<p>Главная страница</p>
-		</>
+		<div className="container">
+			<div className={s.intro}>
+				<img src={fitters} />
+				<div className={s.callUs}>
+					<span className={s.phone}>ТЕЛЕФОН</span>
+					<span className={s.phoneNumber}>+7(347) 262-91-75</span>
+					<span className={s.mail}>
+						<a>info@predelufa.ru</a>
+					</span>
+				</div>
+			</div>
+			<div className={s.help}>
+				<span className={s.helpHeadline}>ПОМОЖЕМ</span>
+				<span className={s.helpDescr}>
+					Разработать и реализовать комплексные проекты для предприятий и
+					организаций любого масштаба. \ Главная цель – создание у наших
+					партнеров современной и надежной инфраструктуры по безопасности и
+					связи.
+				</span>
+			</div>
+		</div>
 	);
 }
 
