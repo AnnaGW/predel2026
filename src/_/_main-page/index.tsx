@@ -1,6 +1,6 @@
 import { System } from '~/els/system';
 import surveillance from './img/surveillance-1.jpg';
-import fitters from './img/fitters.avif';
+import fitters from './img/fitters.jpg';
 import cable from './img/cable-1.jpg';
 import access from './img/access-1.jpg';
 import signaling from './img/signaling-1.jpg';

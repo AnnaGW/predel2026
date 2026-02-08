@@ -20,6 +20,16 @@
   color: rgb(255,255,255);
 }
 
+@media (max-width: 660px) {
+  .system {
+    width: 100%;
+  }
+
+  .systemName {
+    padding-bottom: 15px;
+  }
+}
+
 @media (orientation: portrait) and (max-width: 480px) {
   .system {
     width: 100%;

@@ -1,11 +1,12 @@
 .intro {
   position: relative;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .callUs {
   position: absolute;
-  top: 20px;
+  bottom: 20px;
   right: 45px;
   box-sizing: border-box;
   width: 300px;
@@ -39,8 +40,7 @@
 
 .phone {
   font-size: 58px;
-  font-weight: 900;
-  
+  font-weight: 900;  
 }
 
 .phoneNumber {  
@@ -71,6 +71,7 @@
 .helpDescr {
   padding: 3px;
   padding-left: 10px;
+  font-size: 16px;
 }
 
 .systems {
@@ -146,6 +147,42 @@
   transform: rotate(45deg);
   border-top: 2px solid var(--bg-color-3);
   border-right: 2px solid var(--bg-color-3);
+}
+
+@media (max-width: 660px) {
+  .callUs {  
+    width: fit-content;
+    height: auto;  
+    padding: 10px;
+  }
+
+  .phone {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 700;  
+  }
+
+  .phoneNumber {  
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .mail {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+
+  .helpHeadline {    
+    font-size: 56px;    
+  }
+
+  .helpDescr {
+    padding: 3px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+
 }
 
 @media (orientation: portrait) and (max-width: 480px) {
