@@ -1,0 +1,38 @@
+.abouteWrap {
+  margin-bottom: 50px;
+}
+.about {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--bg-color-3);
+  display: flex;  
+  justify-content: space-between;  
+  color: var(--secondary-font-color);
+}
+
+.aboutHedline {  
+  transform: translateY(10px);
+  font-family: Impact, Arial, sans-serif;
+  font-size: 60px;
+  line-height: 1;  
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+.aboutDescr {
+  padding: 3px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.aboutImg {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.aboutText {
+  font-size: 14px;
+}
