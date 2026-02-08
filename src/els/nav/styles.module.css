@@ -44,7 +44,7 @@
   .mainNavWrap {    
     padding: 0;
     background-color: var(--menu-toggle-bg);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius);    
   }
 
   .mainNav {

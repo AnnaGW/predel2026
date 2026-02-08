@@ -19,3 +19,9 @@
 .systemName:hover {  
   color: rgb(255,255,255);
 }
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .system {
+    width: 100%;
+  }
+}
