@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
+  margin-bottom: 30px;
   color: var(--secondary-font-color);
 }
 
