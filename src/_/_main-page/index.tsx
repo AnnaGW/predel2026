@@ -6,13 +6,16 @@ import access from './img/access-1.jpg';
 import signaling from './img/signaling-1.jpg';
 import notification from './img/notification-1.jpg';
 import vcs from './img/vcs-1.jpg';
+import elsys from './img/elsys-1.jpg';
+import legrand from './img/legrand-1.jpg';
+import punktir from './img/punktir-1.jpg';
 import s from './styles.module.css';
 
 export function MainPage() {
 	return (
 		<>
 			<div className="container">
-				<div className={s.intro}>
+				<section className={s.intro}>
 					<img src={fitters} />
 					<div className={s.callUs}>
 						<span className={s.phone}>ТЕЛЕФОН</span>
@@ -21,8 +24,8 @@ export function MainPage() {
 							<a>info@predelufa.ru</a>
 						</span>
 					</div>
-				</div>
-				<div className={s.help}>
+				</section>
+				<section className={s.help}>
 					<span className={s.helpHeadline}>ПОМОЖЕМ</span>
 					<span className={s.helpDescr}>
 						Разработать и реализовать комплексные проекты для предприятий и
@@ -30,7 +33,7 @@ export function MainPage() {
 						партнеров современной и надежной инфраструктуры по безопасности и
 						связи.
 					</span>
-				</div>
+				</section>
 				<div className={s.systems}>
 					<System imageSrc={surveillance} name="Видеонаблюдение" link="" />
 					<System imageSrc={cable} name="Кабельные системы" link="" />
@@ -40,9 +43,27 @@ export function MainPage() {
 					<System imageSrc={vcs} name="Система ВКС" link="" />
 				</div>
 			</div>
-			<div className={s.partners}>
-				<div className="container"></div>
-			</div>
+			<section className={s.partners}>
+				<div className="container">
+					<p className={s.partnersHeadline}>Наш партнеры</p>
+					<ul className={s.partnersList}>
+						<li className={s.partnersItem}>
+							<img src={legrand} />
+						</li>
+						<li className={s.partnersBorder}></li>
+						<li className={s.partnersItem}>
+							<img src={elsys} />
+						</li>
+						<li className={s.partnersBorder}></li>
+						<li className={s.partnersItem}>
+							<img src={punktir} />
+						</li>
+					</ul>
+					<a className={s.partnersMore} href={''}>
+						ЕЩЕ
+					</a>
+				</div>
+			</section>
 		</>
 	);
 }
