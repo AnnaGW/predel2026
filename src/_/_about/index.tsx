@@ -1,5 +1,5 @@
 import { Block } from '~/els/block';
-import abouteUs from './img/about.jpg';
+import aboutUs from './img/about.jpg';
 import s from './styles.module.css';
 
 function AboutPage() {
@@ -19,7 +19,7 @@ function AboutPage() {
 						</span>
 					</div>
 					<div className={s.aboutText}>
-						<img src={abouteUs} className={s.aboutImg}></img>
+						<img src={aboutUs} className={s.aboutImg}></img>
 						Основное направление нашей деятельности – разработка и реализация
 						комплексных проектов для предприятий и организаций любого масштаба.
 						Главная цель – создание у наших партнеров современной и надежной
