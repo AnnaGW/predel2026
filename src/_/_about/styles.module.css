@@ -49,9 +49,9 @@
 
   .aboutHedline {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 40px;
-    transform: none;
+    transform: none;    
   }
 
   .aboutDescr {
