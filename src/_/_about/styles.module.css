@@ -26,13 +26,46 @@
 }
 
 .aboutImg {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
+  transform: translateY(10px);
 }
 
 .aboutText {
   font-size: 14px;
+}
+
+.aboutText a {
+  text-decoration: underline;
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .about {
+    display: block;
+  }
+
+  .aboutHedline {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+    transform: none;
+  }
+
+  .aboutDescr {
+    display: block;
+    padding: 0;
+  }
+
+  .aboutImg {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .aboutText {
+    font-size: 16px;
+  }
 }

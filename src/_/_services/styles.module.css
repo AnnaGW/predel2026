@@ -19,10 +19,23 @@
   font-size: 14px;
 }
 
+.servicesText a {
+  text-decoration: underline;
+}
+
 .servicesImg {
   width: 300px;
   height: 300px;
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
+  transform: translateY(5px);
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .servicesImg {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
 }
