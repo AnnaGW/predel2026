@@ -1,0 +1,33 @@
+.bgFixed {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;	
+	/* background-image: linear-gradient(var(--main-bg-color) 55%, var(--secondary-bg-color)); */
+	background-color: var(--main-bg-color);
+	background-image: url(./bg-dots.png);
+	background-size: auto;
+	background-repeat: repeat;
+	background-position: center top;
+}
+
+.mainLayout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+  font-family: Impact, Arial, sans-serif;
+  text-align: center;
+}
+
+.mainLayout h1,
+.mainLayout h2{
+  margin-bottom: 30px;
+  columns: var(--bg-color-3);
+}
+
+.link {  
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: underline;
+}
