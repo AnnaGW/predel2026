@@ -33,6 +33,10 @@ const routes = [
 						path: AppRoute.Partners,
 						lazy: () => import('./_/_partners'),
 					},
+					{
+						path: AppRoute.Surveillance,
+						lazy: () => import('./_/_services/surveillance'),
+					},
 				],
 			},
 		],
