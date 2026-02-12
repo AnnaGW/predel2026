@@ -1,3 +1,4 @@
+import { Headline } from '~/els/headline';
 import bolid from './img/bolid-2.jpg';
 import elsys from './img/elsys-2.jpg';
 import legran from './img/legrand-2.jpg';
@@ -12,7 +13,7 @@ import s from './styles.module.css';
 export function PartnersPage() {
 	return (
 		<div>
-			<h1 className={s.partnersHeadline}>Наши партнеры</h1>
+			<Headline text="Наши партнеры" />
 			<ul className={s.partnersLogoList}>
 				<li className={s.partnersLogoItem}>
 					<img src={legran} className={s.partnersLogoImg} />

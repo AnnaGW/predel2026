@@ -1,9 +1,10 @@
+import { Headline } from '~/els/headline';
 import s from './styles.module.css';
 
 export function ContactsPage() {
 	return (
 		<div>
-			<h1 className={s.contactsHeadline}>Контакты</h1>
+			<Headline text="Контакты" />
 			<div className={s.contactsContent}>
 				<div className={s.contactsAdress}>
 					<h3>Наш адрес</h3>
