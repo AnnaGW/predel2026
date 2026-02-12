@@ -9,7 +9,7 @@
 }
 
 .mainNavItem {
-  
+  position: relative;
   border-right: 1px solid var(--bg-color-3);
   cursor: pointer;
 }
@@ -58,8 +58,71 @@
   }
 
   .mainNavLink {
-    padding: 20px;
+    padding: 15px 30px;
     text-align: right;
   }
 
+  .mainNavLink:hover {
+    color: inherit;
+  }
+
+  .mainNavService {
+    padding-left: 40px;
+  }
+
+  .mainNavService::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid var(--bg-color-3);
+    border-right: 1px solid var(--bg-color-3);
+    transform: rotate(45deg);
+  }
+  
+}
+
+/* Sub Nav */
+
+.mainSubNav {  
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 255px;
+  overflow: hidden;
+  background-color: var(--bg-color-2);
+  border-radius: var(--border-radius);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+  z-index: 10;
+  transition: height 0.5s ease-in-out;
+}
+
+.mainSubNavLink {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .mainSubNav {
+    position: relative;
+    top: 0;
+    height: 276px;
+    font-size: 20px;
+    background-color: var(--menu-toggle-bg);
+    box-shadow: none;
+  }
+
+  .mainSubNavLink {
+    padding: 10px 50px;  
+    padding-left: 10px;  
+  }
+}
+
+.hidden {
+  /* display: none; */
+  height: 0;
+  overflow: hidden;
+  box-shadow: none;
 }

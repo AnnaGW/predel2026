@@ -9,7 +9,7 @@ import s from './styles.module.css';
 
 export const Header = (): ReactElement => {
 	const url = useLocation();
-
+	console.log('url.pathname', url.pathname);
 	const [currentPage, setCurrentPage] = useState<AppRoute>(AppRoute.MainPage);
 
 	useEffect(() => {

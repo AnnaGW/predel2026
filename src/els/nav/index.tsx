@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react';
+import { useState, type ReactElement } from 'react';
 import s from './styles.module.css';
 import { AppRoute, Pages } from '~/const';
 import { cn } from '../@common/cn';
@@ -12,6 +12,13 @@ export const MainNav = ({
 	currentPage,
 	isOpen = true,
 }: MainNavProps): ReactElement => {
+	const [isSubnavOpen, setIsSubnavOpen] = useState<boolean>(false);
+
+	const menuClickHandler = (evt: React.MouseEvent<HTMLAnchorElement>) => {
+		evt.preventDefault();
+		setIsSubnavOpen(!isSubnavOpen);
+	};
+
 	return (
 		<div className={cn(s.mainNavWrap, { [s.invisible]: !isOpen })}>
 			<ul className={s.mainNav}>
@@ -37,13 +44,79 @@ export const MainNav = ({
 				</li>
 				<li className={s.mainNavItem}>
 					<a
-						href={AppRoute.Services}
-						className={cn(s.mainNavLink, {
+						className={cn(s.mainNavLink, s.mainNavService, {
 							[s.activeLink]: currentPage === AppRoute.Services,
 						})}
+						onClick={menuClickHandler}
 					>
 						{Pages.Services}
 					</a>
+					<ul
+						className={cn(s.mainSubNav, {
+							[s.hidden]: !isSubnavOpen,
+						})}
+					>
+						<li>
+							<a
+								href={AppRoute.Surveillance}
+								className={cn(s.mainNavLink, s.mainSubNavLink, {
+									[s.activeLink]: currentPage === AppRoute.Surveillance,
+								})}
+							>
+								{Pages.Surveillance}
+							</a>
+						</li>
+						<li>
+							<a
+								href={AppRoute.Cablesystem}
+								className={cn(s.mainNavLink, s.mainSubNavLink, {
+									[s.activeLink]: currentPage === AppRoute.Cablesystem,
+								})}
+							>
+								{Pages.Cablesystem}
+							</a>
+						</li>
+						<li>
+							<a
+								href={AppRoute.Access}
+								className={cn(s.mainNavLink, s.mainSubNavLink, {
+									[s.activeLink]: currentPage === AppRoute.Access,
+								})}
+							>
+								{Pages.Access}
+							</a>
+						</li>
+						<li>
+							<a
+								href={AppRoute.Signaling}
+								className={cn(s.mainNavLink, s.mainSubNavLink, {
+									[s.activeLink]: currentPage === AppRoute.Signaling,
+								})}
+							>
+								{Pages.Signaling}
+							</a>
+						</li>
+						<li>
+							<a
+								href={AppRoute.Notification}
+								className={cn(s.mainNavLink, s.mainSubNavLink, {
+									[s.activeLink]: currentPage === AppRoute.Notification,
+								})}
+							>
+								{Pages.Notification}
+							</a>
+						</li>
+						<li>
+							<a
+								href={AppRoute.Vks}
+								className={cn(s.mainNavLink, s.mainSubNavLink, {
+									[s.activeLink]: currentPage === AppRoute.Vks,
+								})}
+							>
+								{Pages.Vks}
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li className={s.mainNavItem}>
 					<a
