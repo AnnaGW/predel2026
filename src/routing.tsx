@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { Children, lazy, useMemo } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { AppRoute } from './const';
@@ -15,20 +15,25 @@ const routes = [
 				lazy: () => import('./_/_main-page'),
 			},
 			{
-				path: AppRoute.About,
-				lazy: () => import('./_/_about'),
-			},
-			{
-				path: AppRoute.Services,
-				lazy: () => import('./_/_services'),
-			},
-			{
-				path: AppRoute.Contacts,
-				lazy: () => import('./_/_contacts'),
-			},
-			{
-				path: AppRoute.Partners,
-				lazy: () => import('./_/_partners'),
+				lazy: () => import('./_/template'),
+				children: [
+					{
+						path: AppRoute.About,
+						lazy: () => import('./_/_about'),
+					},
+					{
+						path: AppRoute.Services,
+						lazy: () => import('./_/_services'),
+					},
+					{
+						path: AppRoute.Contacts,
+						lazy: () => import('./_/_contacts'),
+					},
+					{
+						path: AppRoute.Partners,
+						lazy: () => import('./_/_partners'),
+					},
+				],
 			},
 		],
 	},
