@@ -1,4 +1,4 @@
-import { useState, type ReactElement } from 'react';
+import { useEffect, useRef, useState, type ReactElement } from 'react';
 import s from './styles.module.css';
 import { AppRoute, Pages } from '~/const';
 import { cn } from '../@common/cn';
@@ -14,10 +14,24 @@ export const MainNav = ({
 }: MainNavProps): ReactElement => {
 	const [isSubnavOpen, setIsSubnavOpen] = useState<boolean>(false);
 
-	const menuClickHandler = (evt: React.MouseEvent<HTMLAnchorElement>) => {
-		evt.preventDefault();
-		setIsSubnavOpen(!isSubnavOpen);
-	};
+	const submenuRef = useRef<HTMLUListElement | null>(null);
+
+	useEffect(() => {
+		//обработка клика вне подменю
+		const clickOutsideHandler = (evt: DocumentEventMap['mousedown']) => {
+			if (
+				submenuRef.current &&
+				!submenuRef.current.contains(evt.target as any)
+			) {
+				setIsSubnavOpen(true);
+			}
+		};
+
+		document.addEventListener('mousedown', clickOutsideHandler);
+		return () => {
+			document.removeEventListener('mousedown', clickOutsideHandler);
+		};
+	}, []);
 
 	return (
 		<div className={cn(s.mainNavWrap, { [s.invisible]: !isOpen })}>
@@ -47,7 +61,7 @@ export const MainNav = ({
 						className={cn(s.mainNavLink, s.mainNavService, {
 							[s.activeLink]: currentPage === AppRoute.Services,
 						})}
-						onClick={menuClickHandler}
+						onMouseEnter={() => setIsSubnavOpen(true)}
 					>
 						{Pages.Services}
 					</a>
@@ -55,6 +69,7 @@ export const MainNav = ({
 						className={cn(s.mainSubNav, {
 							[s.hidden]: !isSubnavOpen,
 						})}
+						ref={submenuRef}
 					>
 						<li>
 							<a
