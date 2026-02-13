@@ -37,6 +37,26 @@ const routes = [
 						path: AppRoute.Surveillance,
 						lazy: () => import('./_/_services/surveillance'),
 					},
+					{
+						path: AppRoute.Cablesystem,
+						lazy: () => import('./_/_services/cable'),
+					},
+					{
+						path: AppRoute.Access,
+						lazy: () => import('./_/_services/access'),
+					},
+					{
+						path: AppRoute.Signaling,
+						lazy: () => import('./_/_services/signaling'),
+					},
+					{
+						path: AppRoute.Notification,
+						lazy: () => import('./_/_services/notification'),
+					},
+					{
+						path: AppRoute.Vks,
+						lazy: () => import('./_/_services/vks'),
+					},
 				],
 			},
 		],

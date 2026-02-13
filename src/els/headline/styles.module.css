@@ -12,8 +12,8 @@
 }
 
 @media (orientation: portrait) and (max-width: 480px) {
-  .partnersHeadline {
-    font-size: 40px;
+  .headline {
+    font-size: 32px;
     text-align: center;
   }
 }
