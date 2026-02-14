@@ -23,7 +23,7 @@ export const MainNav = ({
 				submenuRef.current &&
 				!submenuRef.current.contains(evt.target as any)
 			) {
-				setIsSubnavOpen(true);
+				setIsSubnavOpen(false);
 			}
 		};
 
@@ -58,6 +58,7 @@ export const MainNav = ({
 				</li>
 				<li className={s.mainNavItem}>
 					<a
+						href={AppRoute.Services}
 						className={cn(s.mainNavLink, s.mainNavService, {
 							[s.activeLink]: currentPage === AppRoute.Services,
 						})}

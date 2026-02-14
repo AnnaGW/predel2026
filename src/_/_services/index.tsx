@@ -2,10 +2,10 @@ import { Headline } from '~/els/headline';
 import aboutUs from './img/about.jpg';
 import s from './styles.module.css';
 
-export function SurveillancePage() {
+export function ServicesPage() {
 	return (
 		<div>
-			<Headline text="Видеонаблюдение" />
+			<Headline text="Услуги" />
 			<div className={s.servicesText}>
 				<img src={aboutUs} className={s.servicesImg} />
 				<b>
@@ -57,4 +57,4 @@ export function SurveillancePage() {
 	);
 }
 
-export const element = <SurveillancePage />;
+export const element = <ServicesPage />;
