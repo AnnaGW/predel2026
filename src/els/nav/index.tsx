@@ -15,13 +15,15 @@ export const MainNav = ({
 	const [isSubnavOpen, setIsSubnavOpen] = useState<boolean>(false);
 
 	const submenuRef = useRef<HTMLUListElement | null>(null);
+	const submenuBtnRef = useRef<HTMLSpanElement>(null);
 
 	useEffect(() => {
 		//обработка клика вне подменю
 		const clickOutsideHandler = (evt: DocumentEventMap['mousedown']) => {
 			if (
 				submenuRef.current &&
-				!submenuRef.current.contains(evt.target as any)
+				!submenuRef.current.contains(evt.target as any) &&
+				!submenuBtnRef.current?.contains(evt.target as any)
 			) {
 				setIsSubnavOpen(false);
 			}
@@ -32,6 +34,10 @@ export const MainNav = ({
 			document.removeEventListener('mousedown', clickOutsideHandler);
 		};
 	}, []);
+
+	const subnavBtnClickHandler = () => {
+		setIsSubnavOpen(!isSubnavOpen);
+	};
 
 	return (
 		<div className={cn(s.mainNavWrap, { [s.invisible]: !isOpen })}>
@@ -57,6 +63,13 @@ export const MainNav = ({
 					</a>
 				</li>
 				<li className={s.mainNavItem}>
+					<span
+						className={s.mainSubnavBtn}
+						onClick={subnavBtnClickHandler}
+						ref={submenuBtnRef}
+					>
+						&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;
+					</span>
 					<a
 						href={AppRoute.Services}
 						className={cn(s.mainNavLink, s.mainNavService, {
