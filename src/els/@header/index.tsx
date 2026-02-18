@@ -29,6 +29,24 @@ export const Header = (): ReactElement => {
 			case AppRoute.Contacts:
 				setCurrentPage(AppRoute.Contacts);
 				break;
+			case AppRoute.Surveillance:
+				setCurrentPage(AppRoute.Surveillance);
+				break;
+			case AppRoute.Cablesystem:
+				setCurrentPage(AppRoute.Cablesystem);
+				break;
+			case AppRoute.Access:
+				setCurrentPage(AppRoute.Access);
+				break;
+			case AppRoute.Notification:
+				setCurrentPage(AppRoute.Notification);
+				break;
+			case AppRoute.Vks:
+				setCurrentPage(AppRoute.Vks);
+				break;
+			case AppRoute.Signaling:
+				setCurrentPage(AppRoute.Signaling);
+				break;
 			default:
 				setCurrentPage(AppRoute.MainPage);
 				break;
