@@ -9,6 +9,7 @@
   color: var(--secondary-font-color);
   white-space: nowrap;
   text-decoration: underline;  
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .6);
 }
 
 @media (orientation: portrait) and (max-width: 480px) {

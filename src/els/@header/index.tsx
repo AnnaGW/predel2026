@@ -88,6 +88,11 @@ export const Header = (): ReactElement => {
 						<Logo />
 						<div className={s.headerNavWrap}>
 							<MainNav currentPage={currentPage} isOpen={isMobMenuOpen} />
+							<div className={s.headerPLank}>
+								<span>
+									Звоните и пишите нам! Мы ответим на все Ваши вопросы.
+								</span>
+							</div>
 						</div>
 					</div>
 					<button
