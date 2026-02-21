@@ -77,23 +77,10 @@
     display: inline;
     position: absolute;
     top: 11px;
-    left: 160px;
+    left: 175px;
     font-size: 25px;
     font-weight: 400;
   }
-
-  /* .mainNavService::before {
-    content: '';
-    position: absolute;
-    top: 22px;
-    left: 150px;
-    width: 10px;
-    height: 10px;
-    border-bottom: 1px solid var(--bg-color-3);
-    border-right: 1px solid var(--bg-color-3);
-    transform: rotate(45deg);
-  }
-   */
 }
 
 /* Sub Nav */
@@ -117,7 +104,6 @@
 }
 
 @media (orientation: portrait) and (max-width: 480px) { 
-
   .mainSubNav {
     position: relative;
     top: 0;

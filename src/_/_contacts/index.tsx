@@ -30,6 +30,12 @@ export function ContactsPage() {
 					<a href={'files/Predel_partner_card.doc'}>Карта партнера</a>
 				</p>
 			</div>
+			<iframe
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A80bfeabf7d1eb5332eca31227a85813c78d28f1e9b9f1de2e439a9564058771c&amp;source=constructor"
+				width="100%"
+				height="450"
+				style={{ border: 0 }}
+			></iframe>
 		</div>
 	);
 }
