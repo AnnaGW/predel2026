@@ -1,1 +1,0 @@
-import{j as e,B as t,O as a}from"./index-8uj6_7cw.js";const s="_templateWrap_2bpc5_1",r={templateWrap:s};function l(){return e.jsx("div",{className:r.templateWrap,children:e.jsx("div",{className:"container",children:e.jsx(t,{children:e.jsx(a,{})})})})}const p=e.jsx(l,{});export{p as element};
