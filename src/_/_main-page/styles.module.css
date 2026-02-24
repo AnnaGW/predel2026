@@ -10,7 +10,7 @@
   right: 45px;
   box-sizing: border-box;
   width: 300px;
-  height: 245px;  
+  height: 220px;  
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -41,10 +41,13 @@
 .phone {
   font-size: 58px;
   font-weight: 900;  
+  /* background-clip: text;
+  background-image: linear-gradient(180deg, #e2eaf7 6.41%, #8baef0 46.71%, #2b68eb 92.15%);
+  -webkit-text-fill-color: transparent;   */
 }
 
 .phoneNumber {  
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 900;
 }
 

@@ -90,8 +90,9 @@ export const Header = (): ReactElement => {
 							<MainNav currentPage={currentPage} isOpen={isMobMenuOpen} />
 							<div className={s.headerPLank}>
 								<span>
-									Звоните и пишите нам! Мы ответим на все Ваши вопросы.
+									Звоните и пишите нам! Мы ответим на все Ваши вопросы. <br />
 								</span>
+								<span>+7 347 262 91 75 / info@predelufa.ru</span>
 							</div>
 						</div>
 					</div>

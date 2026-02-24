@@ -1,4 +1,4 @@
-import { Children, lazy, useMemo } from 'react';
+import { useMemo } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { AppRoute } from './const';

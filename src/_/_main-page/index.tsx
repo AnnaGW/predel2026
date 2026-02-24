@@ -19,7 +19,7 @@ export function MainPage() {
 					<img src={fitters} />
 					<div className={s.callUs}>
 						<span className={s.phone}>ТЕЛЕФОН</span>
-						<span className={s.phoneNumber}>+7(347) 262-91-75</span>
+						<span className={s.phoneNumber}>+7 (347) 262-91-75</span>
 						<span className={s.mail}>
 							<a>info@predelufa.ru</a>
 						</span>

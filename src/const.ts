@@ -28,16 +28,16 @@ export enum Pages {
 
 export const BASE_URL = import.meta.env.BASE_URL;
 
-function getBase(): string {
-	if (import.meta.env.MODE === 'development') {
-		return `http://${import.meta.env.VITE_DOMAIN}`;
-	}
-	return `https://${import.meta.env.VITE_DOMAIN}`;
-}
+// function getBase(): string {
+// 	if (import.meta.env.MODE === 'development') {
+// 		return `http://${import.meta.env.VITE_DOMAIN}`;
+// 	}
+// 	return `https://${import.meta.env.VITE_DOMAIN}`;
+// }
 
-const getCurrentPath = () => {
-	const pathName = window.location.pathname;
-	return pathName.startsWith(BASE_URL)
-		? pathName.slice(BASE_URL.length - 1) || '/'
-		: pathName;
-};
+// const getCurrentPath = () => {
+// 	const pathName = window.location.pathname;
+// 	return pathName.startsWith(BASE_URL)
+// 		? pathName.slice(BASE_URL.length - 1) || '/'
+// 		: pathName;
+// };
