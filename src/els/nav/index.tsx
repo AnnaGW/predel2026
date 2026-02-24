@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState, type ReactElement } from 'react';
 import s from './styles.module.css';
-import { AppRoute, InternalRoute, Pages } from '~/const';
+import { AppRoute, Pages } from '~/const';
 import { cn } from '../@common/cn';
 
 export type MainNavProps = {
-	currentPage: InternalRoute;
+	currentPage: string;
 	isOpen: boolean;
 };
 

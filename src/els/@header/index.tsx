@@ -3,54 +3,52 @@ import { useLocation } from 'react-router-dom';
 import { Logo } from '../logo';
 import { cn } from '../@common/cn';
 import { MainNav } from '../nav';
-import { AppRoute, InternalRoute } from '~/const';
+import { AppRoute } from '~/const';
 
 import s from './styles.module.css';
 
 export const Header = (): ReactElement => {
 	const url = useLocation();
 
-	const [currentPage, setCurrentPage] = useState<InternalRoute>(
-		InternalRoute.MainPage
-	);
+	const [currentPage, setCurrentPage] = useState<string>(AppRoute.MainPage);
 
 	useEffect(() => {
 		switch (url.pathname) {
 			case AppRoute.MainPage:
-				setCurrentPage(InternalRoute.MainPage);
+				setCurrentPage(AppRoute.MainPage);
 				break;
 			case AppRoute.About:
-				setCurrentPage(InternalRoute.About);
+				setCurrentPage(AppRoute.About);
 				break;
 			case AppRoute.Services:
-				setCurrentPage(InternalRoute.Services);
+				setCurrentPage(AppRoute.Services);
 				break;
 			case AppRoute.Partners:
-				setCurrentPage(InternalRoute.Partners);
+				setCurrentPage(AppRoute.Partners);
 				break;
 			case AppRoute.Contacts:
-				setCurrentPage(InternalRoute.Contacts);
+				setCurrentPage(AppRoute.Contacts);
 				break;
 			case AppRoute.Surveillance:
-				setCurrentPage(InternalRoute.Surveillance);
+				setCurrentPage(AppRoute.Surveillance);
 				break;
 			case AppRoute.Cablesystem:
-				setCurrentPage(InternalRoute.Cablesystem);
+				setCurrentPage(AppRoute.Cablesystem);
 				break;
 			case AppRoute.Access:
-				setCurrentPage(InternalRoute.Access);
+				setCurrentPage(AppRoute.Access);
 				break;
 			case AppRoute.Notification:
-				setCurrentPage(InternalRoute.Notification);
+				setCurrentPage(AppRoute.Notification);
 				break;
 			case AppRoute.Vks:
-				setCurrentPage(InternalRoute.Vks);
+				setCurrentPage(AppRoute.Vks);
 				break;
 			case AppRoute.Signaling:
-				setCurrentPage(InternalRoute.Signaling);
+				setCurrentPage(AppRoute.Signaling);
 				break;
 			default:
-				setCurrentPage(InternalRoute.MainPage);
+				setCurrentPage(AppRoute.MainPage);
 				break;
 		}
 	}, [url]);
