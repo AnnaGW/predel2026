@@ -10,6 +10,7 @@ import elsys from './img/elsys-1.jpg';
 import legrand from './img/legrand-1.jpg';
 import punktir from './img/punktir-1.jpg';
 import s from './styles.module.css';
+import { AppRoute } from '~/const';
 
 export function MainPage() {
 	return (
@@ -59,7 +60,7 @@ export function MainPage() {
 							<img src={punktir} />
 						</li>
 					</ul>
-					<a className={s.partnersMore} href={''}>
+					<a className={s.partnersMore} href={AppRoute.Partners}>
 						ЕЩЕ
 					</a>
 				</div>

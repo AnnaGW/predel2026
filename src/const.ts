@@ -1,4 +1,4 @@
-export enum AppRoute {
+export enum InternalRoute {
 	MainPage = '/',
 	About = '/about',
 	Services = '/services',
@@ -11,6 +11,27 @@ export enum AppRoute {
 	Notification = '/notification',
 	Vks = '/vks',
 }
+
+export const getBase = (route: string): string => {
+	if (import.meta.env.MODE === 'development') {
+		return route;
+	}
+	return `/predel2026${route}`;
+};
+
+export const AppRoute = {
+	MainPage: getBase(InternalRoute.MainPage),
+	About: getBase(InternalRoute.About),
+	Services: getBase(InternalRoute.Services),
+	Partners: getBase(InternalRoute.Partners),
+	Contacts: getBase(InternalRoute.Contacts),
+	Surveillance: getBase(InternalRoute.Surveillance),
+	Cablesystem: getBase(InternalRoute.Cablesystem),
+	Access: getBase(InternalRoute.Access),
+	Signaling: getBase(InternalRoute.Signaling),
+	Notification: getBase(InternalRoute.Notification),
+	Vks: getBase(InternalRoute.Vks),
+};
 
 export enum Pages {
 	MainPage = 'Главная',
@@ -27,13 +48,6 @@ export enum Pages {
 }
 
 export const BASE_URL = import.meta.env.BASE_URL;
-
-export const getBase = (route: AppRoute): string => {
-	if (import.meta.env.MODE === 'development') {
-		return route;
-	}
-	return `/predel2026${route}`;
-};
 
 // const getCurrentPath = () => {
 // 	const pathName = window.location.pathname;
