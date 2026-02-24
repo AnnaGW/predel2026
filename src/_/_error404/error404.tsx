@@ -1,8 +1,10 @@
 import { Block } from '~/els/block';
 import s from './styles.module.css';
-import { AppRoute } from '~/const';
+import { AppRoute, getBase } from '~/const';
 
 function Error404() {
+	console.log('MODE is ', import.meta.env.MODE);
+	console.log('ROUTE is ', getBase(AppRoute.MainPage));
 	return (
 		<div className={s.mainLayout}>
 			<div className={s.bgFixed}></div>

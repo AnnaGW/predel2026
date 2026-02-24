@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactElement } from 'react';
 import s from './styles.module.css';
-import { AppRoute, Pages } from '~/const';
+import { AppRoute, getBase, Pages } from '~/const';
 import { cn } from '../@common/cn';
 
 export type MainNavProps = {
@@ -44,9 +44,9 @@ export const MainNav = ({
 			<ul className={s.mainNav}>
 				<li className={s.mainNavItem}>
 					<a
-						href={AppRoute.MainPage}
+						href={getBase(AppRoute.MainPage)}
 						className={cn(s.mainNavLink, {
-							[s.activeLink]: currentPage === AppRoute.MainPage,
+							[s.activeLink]: currentPage === getBase(AppRoute.MainPage),
 						})}
 					>
 						{Pages.MainPage}
@@ -54,9 +54,9 @@ export const MainNav = ({
 				</li>
 				<li className={s.mainNavItem}>
 					<a
-						href={AppRoute.About}
+						href={getBase(AppRoute.About)}
 						className={cn(s.mainNavLink, {
-							[s.activeLink]: currentPage === AppRoute.About,
+							[s.activeLink]: currentPage === getBase(AppRoute.About),
 						})}
 					>
 						{Pages.About}

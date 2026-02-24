@@ -11,5 +11,5 @@ export default defineConfig({
 	build: {
 		outDir: 'build',
 	},
-	base: '/predel2026',
+	base: './',
 });
