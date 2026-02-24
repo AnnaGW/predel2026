@@ -25,3 +25,4 @@ origin
 *.njsproj
 *.sln
 *.sw?
+.env

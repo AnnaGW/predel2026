@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { AppRoute } from './const';
+import { AppRoute, getBase } from './const';
 import Error404 from './_/_error404/error404';
 
 const routes = [
@@ -11,22 +11,22 @@ const routes = [
 		lazy: () => import('./_'),
 		children: [
 			{
-				path: AppRoute.MainPage,
+				path: getBase(AppRoute.MainPage),
 				lazy: () => import('./_/_main-page'),
 			},
 			{
 				lazy: () => import('./_/template'),
 				children: [
 					{
-						path: AppRoute.About,
+						path: getBase(AppRoute.About),
 						lazy: () => import('./_/_about'),
 					},
 					{
-						path: AppRoute.Services,
+						path: getBase(AppRoute.Services),
 						lazy: () => import('./_/_services'),
 					},
 					{
-						path: AppRoute.Contacts,
+						path: getBase(AppRoute.Contacts),
 						lazy: () => import('./_/_contacts'),
 					},
 					{

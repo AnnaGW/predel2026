@@ -28,12 +28,12 @@ export enum Pages {
 
 export const BASE_URL = import.meta.env.BASE_URL;
 
-// function getBase(): string {
-// 	if (import.meta.env.MODE === 'development') {
-// 		return `http://${import.meta.env.VITE_DOMAIN}`;
-// 	}
-// 	return `https://${import.meta.env.VITE_DOMAIN}`;
-// }
+export const getBase = (route: AppRoute): string => {
+	if (import.meta.env.MODE === 'development') {
+		return route;
+	}
+	return `/predel2026${route}`;
+};
 
 // const getCurrentPath = () => {
 // 	const pathName = window.location.pathname;
