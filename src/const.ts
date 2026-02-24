@@ -31,7 +31,7 @@ export const AppRoute = {
 	Signaling: getBase(InternalRoute.Signaling),
 	Notification: getBase(InternalRoute.Notification),
 	Vks: getBase(InternalRoute.Vks),
-};
+} as const;
 
 export enum Pages {
 	MainPage = 'Главная',

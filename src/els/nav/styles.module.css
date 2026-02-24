@@ -1,127 +1,129 @@
 .mainNavWrap {
-  padding: 20px 0;
+	padding: 20px 0;
 }
 
 .mainNav {
-  display: flex;
-  justify-content: space-between;
-  color: var(--link-color);
+	display: flex;
+	justify-content: space-between;
+	color: var(--link-color);
 }
 
 .mainNavItem {
-  position: relative;
-  border-right: 1px solid var(--bg-color-3);
-  cursor: pointer;
+	position: relative;
+	border-right: 1px solid var(--bg-color-3);
+	cursor: pointer;
 }
 
 .mainNavItem:last-child {
-  border: none;
+	border: none;
 }
 
 .mainNavLink {
-  display: block;
-  padding: 0 20px;
+	display: block;
+	padding: 0 20px;
 }
 
 .mainNavLink:hover {
-  color: var(--secondary-font-color);
+	color: var(--secondary-font-color);
 }
 
 .activeLink {
-  font-weight: 900;
-  cursor: default;
+	font-weight: 900;
+	cursor: default;
 }
 
 .activeLink:hover {
-  color: inherit;
+	color: inherit;
 }
 
-.mainSubnavBtn {display: none;}
+.mainSubnavBtn {
+	display: none;
+}
 
 .invisible {
-  display: none;
+	display: none;
 }
 
 @media (orientation: portrait) and (max-width: 480px) {
-  .mainNavWrap {    
-    padding: 0;
-    background-color: var(--menu-toggle-bg);
-    border-radius: var(--border-radius);    
-  }
+	.mainNavWrap {
+		padding: 0;
+		background-color: var(--menu-toggle-bg);
+		border-radius: var(--border-radius);
+	}
 
-  .mainNav {
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-  }
+	.mainNav {
+		display: flex;
+		flex-direction: column;
+		font-size: 18px;
+	}
 
-  .mainNavItem {
-    position: relative;    
-    border: none;
-  }
+	.mainNavItem {
+		position: relative;
+		border: none;
+	}
 
-  .mainNavLink {
-    padding: 15px 30px;
-    text-align: right;
-  }
+	.mainNavLink {
+		padding: 15px 30px;
+		text-align: right;
+	}
 
-  .mainNavLink:hover {
-    color: inherit;
-  }
+	.mainNavLink:hover {
+		color: inherit;
+	}
 
-  .mainNavService {
-    padding-left: 40px;
-  }
+	.mainNavService {
+		padding-left: 40px;
+	}
 
-  .mainSubnavBtn {
-    display: inline;
-    position: absolute;
-    top: 11px;
-    left: 175px;
-    font-size: 25px;
-    font-weight: 400;
-  }
+	.mainSubnavBtn {
+		display: inline;
+		position: absolute;
+		top: 11px;
+		left: 175px;
+		font-size: 25px;
+		font-weight: 400;
+	}
 }
 
 /* Sub Nav */
 
-.mainSubNav {  
-  position: absolute;
-  top: 30px;
-  left: 0;
-  height: 255px;
-  overflow: hidden;
-  background-color: var(--bg-color-2);
-  border-radius: var(--border-radius);
-  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
-  z-index: 10;
-  transition: height 0.5s ease-in-out;
+.mainSubNav {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	height: 255px;
+	overflow: hidden;
+	background-color: var(--bg-color-2);
+	border-radius: var(--border-radius);
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	transition: height 0.5s ease-in-out;
 }
 
 .mainSubNavLink {
-  padding: 10px 20px;
-  white-space: nowrap;
+	padding: 10px 20px;
+	white-space: nowrap;
 }
 
-@media (orientation: portrait) and (max-width: 480px) { 
-  .mainSubNav {
-    position: relative;
-    top: 0;
-    height: 250px;
-    font-size: 16px;
-    background-color: var(--menu-toggle-bg);
-    box-shadow: none;
-  }
+@media (orientation: portrait) and (max-width: 480px) {
+	.mainSubNav {
+		position: relative;
+		top: 0;
+		height: 250px;
+		font-size: 16px;
+		background-color: var(--menu-toggle-bg);
+		box-shadow: none;
+	}
 
-  .mainSubNavLink {
-    padding: 10px 50px;  
-    padding-left: 10px;  
-  }
+	.mainSubNavLink {
+		padding: 10px 50px;
+		padding-left: 10px;
+	}
 }
 
 .hidden {
-  /* display: none; */
-  height: 0;
-  overflow: hidden;
-  box-shadow: none;
+	/* display: none; */
+	height: 0;
+	overflow: hidden;
+	box-shadow: none;
 }

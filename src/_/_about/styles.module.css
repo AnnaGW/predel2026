@@ -1,71 +1,71 @@
 .abouteWrap {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 .about {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: var(--bg-color-3);
-  display: flex;  
-  justify-content: space-between;  
-  color: var(--secondary-font-color);
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: var(--bg-color-3);
+	display: flex;
+	justify-content: space-between;
+	color: var(--secondary-font-color);
 }
 
-.aboutHedline {  
-  transform: translateY(10px);
-  font-family: Impact, Arial, sans-serif;
-  font-size: 60px;
-  line-height: 1;  
-  white-space: nowrap;
-  text-decoration: underline;
+.aboutHedline {
+	transform: translateY(10px);
+	font-family: Impact, Arial, sans-serif;
+	font-size: 60px;
+	line-height: 1;
+	white-space: nowrap;
+	text-decoration: underline;
 }
 
 .aboutDescr {
-  padding: 3px;
-  padding-left: 20px;
-  font-size: 16px;
+	padding: 3px;
+	padding-left: 20px;
+	font-size: 16px;
 }
 
 .aboutImg {
-  width: 400px;
-  height: 400px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  transform: translateY(10px);
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	transform: translateY(10px);
 }
 
 .aboutText {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .aboutText a {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 @media (orientation: portrait) and (max-width: 480px) {
-  .about {
-    display: block;
-  }
+	.about {
+		display: block;
+	}
 
-  .aboutHedline {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 40px;
-    transform: none;    
-  }
+	.aboutHedline {
+		display: block;
+		margin-bottom: 20px;
+		font-size: 40px;
+		transform: none;
+	}
 
-  .aboutDescr {
-    display: block;
-    padding: 0;
-  }
+	.aboutDescr {
+		display: block;
+		padding: 0;
+	}
 
-  .aboutImg {
-    width: 100%;
-    height: auto;
-    transform: none;
-  }
+	.aboutImg {
+		width: 100%;
+		height: auto;
+		transform: none;
+	}
 
-  .aboutText {
-    font-size: 16px;
-  }
+	.aboutText {
+		font-size: 16px;
+	}
 }

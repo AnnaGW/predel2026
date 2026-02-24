@@ -1,32 +1,32 @@
 .partnersLogoList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .partnersLogoItem {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .partnersLogoItem:nth-child(7),
 .partnersLogoItem:nth-child(8),
 .partnersLogoItem:nth-child(9) {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
 
 .partnersLogoImg {
-  width: 300px;
-  height: auto;
+	width: 300px;
+	height: auto;
 }
 
 @media (orientation: portrait) and (max-width: 480px) {
-  .partnersLogoImg {
-    width: 100%;
-  }
+	.partnersLogoImg {
+		width: 100%;
+	}
 
-  .partnersLogoItem:nth-child(7),
-  .partnersLogoItem:nth-child(8),
-  .partnersLogoItem:nth-child(9) {
-    padding-bottom: 20px;
-  }
+	.partnersLogoItem:nth-child(7),
+	.partnersLogoItem:nth-child(8),
+	.partnersLogoItem:nth-child(9) {
+		padding-bottom: 20px;
+	}
 }

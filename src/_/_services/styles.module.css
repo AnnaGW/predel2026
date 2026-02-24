@@ -1,44 +1,44 @@
 .servicesWrap {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .servicesHeadline {
-  margin-bottom: 20px;
-  padding: 20px;
-  padding-bottom: 30px;
-  background-color: var(--bg-color-3);  
-  font-family: Impact, Arial, sans-serif;
-  font-size: 60px;
-  line-height: 1;  
-  color: var(--secondary-font-color);
-  white-space: nowrap;
-  text-decoration: underline;  
+	margin-bottom: 20px;
+	padding: 20px;
+	padding-bottom: 30px;
+	background-color: var(--bg-color-3);
+	font-family: Impact, Arial, sans-serif;
+	font-size: 60px;
+	line-height: 1;
+	color: var(--secondary-font-color);
+	white-space: nowrap;
+	text-decoration: underline;
 }
 
 .servicesText {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .servicesText a {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .servicesImg {
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  transform: translateY(5px);
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	transform: translateY(5px);
 }
 
 @media (orientation: portrait) and (max-width: 480px) {
-  .servicesHeadline {
-    font-size: 40px;
-  }
-  .servicesImg {
-    width: 100%;
-    height: auto;
-    transform: none;
-  }
+	.servicesHeadline {
+		font-size: 40px;
+	}
+	.servicesImg {
+		width: 100%;
+		height: auto;
+		transform: none;
+	}
 }

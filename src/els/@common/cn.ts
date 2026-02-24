@@ -2,32 +2,32 @@ export function cn(
 	...els: Array<string | { [key: string]: boolean } | undefined>
 ): string {
 	return els.reduce<string>((classNameArrAsStr, strOrObj) => {
-		if (typeof strOrObj === "string") {
+		if (typeof strOrObj === 'string') {
 			return classNameArrAsStr
-				? [classNameArrAsStr, strOrObj].join(" ")
+				? [classNameArrAsStr, strOrObj].join(' ')
 				: strOrObj;
 		}
 
-		if (typeof strOrObj === "object") {
+		if (typeof strOrObj === 'object') {
 			return [
 				classNameArrAsStr,
 				Object.entries(strOrObj).reduce(
 					(objClassNamesAsStr, [className, isExists]) => {
 						if (isExists) {
 							return objClassNamesAsStr
-								? [objClassNamesAsStr, className].join(" ")
+								? [objClassNamesAsStr, className].join(' ')
 								: className;
 						}
 
 						return objClassNamesAsStr;
 					},
-					""
+					''
 				),
 			]
 				.filter(Boolean)
-				.join(" ");
+				.join(' ');
 		}
 
 		return classNameArrAsStr;
-	}, "");
+	}, '');
 }
