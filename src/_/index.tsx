@@ -11,6 +11,11 @@ function MainLayout() {
 		<div className={s.mainLayout}>
 			<div className={s.bgFixed}></div>
 			<Header />
+			<div className={s.mobilePlank}>
+				Звоните и пишите нам! <br />
+				Мы ответим на все Ваши вопросы <br />
+				+7 347 262 91 75 &nbsp;&nbsp;&nbsp;info@predelufa.ru
+			</div>
 			<Outlet />
 			<Footer />
 		</div>
