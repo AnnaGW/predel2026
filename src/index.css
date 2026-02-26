@@ -22,6 +22,16 @@ html {
 	min-width: 320px;
 }
 
+@font-face {
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Impact';
+	font-display: swap;
+	src:
+		local('Impact'),
+		url('../public/fonts/impact.woff2') format('woff2');
+}
+
 :root {
 	font-family: Arial, Verdana, sans-serif; /*Verdana, Impact*/
 	line-height: 1.3;
