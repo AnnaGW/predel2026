@@ -1,12 +1,12 @@
 import { Headline } from '~/els/headline';
 import bolid from './img/bolid-2.jpg';
 import elsys from './img/elsys-2.jpg';
-import legran from './img/legrand-2.jpg';
+import bastion from './img/bastion-2.png';
 import ltv from './img/LTV-2.jpg';
 import nikomax from './img/nikomax-2.png';
-import poligon from './img/poligon-2.jpg';
+import intellekt from './img/intellekt-2.png';
 import punktir from './img/punktir-2.jpg';
-import videonova from './img/videonova-2.jpg';
+import rubezh from './img/rubezh-2.png';
 import zarya from './img/zarya-2.jpg';
 import s from './styles.module.css';
 
@@ -16,7 +16,7 @@ export function PartnersPage() {
 			<Headline text="Наши партнеры" />
 			<ul className={s.partnersLogoList}>
 				<li className={s.partnersLogoItem}>
-					<img src={legran} className={s.partnersLogoImg} />
+					<img src={bastion} className={s.partnersLogoImg} />
 				</li>
 				<li className={s.partnersLogoItem}>
 					<img src={nikomax} className={s.partnersLogoImg} />
@@ -34,10 +34,10 @@ export function PartnersPage() {
 					<img src={zarya} className={s.partnersLogoImg} />
 				</li>
 				<li className={s.partnersLogoItem}>
-					<img src={poligon} className={s.partnersLogoImg} />
+					<img src={intellekt} className={s.partnersLogoImg} />
 				</li>
 				<li className={s.partnersLogoItem}>
-					<img src={videonova} className={s.partnersLogoImg} />
+					<img src={rubezh} className={s.partnersLogoImg} />
 				</li>
 				<li className={s.partnersLogoItem}>
 					<img src={bolid} className={s.partnersLogoImg} />

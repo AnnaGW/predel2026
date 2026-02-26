@@ -7,7 +7,7 @@ import signaling from './img/signaling-1.jpg';
 import notification from './img/notification-1.jpg';
 import vcs from './img/vcs-1.jpg';
 import elsys from './img/elsys-1.jpg';
-import legrand from './img/legrand-1.jpg';
+import bastion from './img/bastion-1.png';
 import punktir from './img/punktir-1.jpg';
 import s from './styles.module.css';
 import { AppRoute } from '~/const';
@@ -69,7 +69,7 @@ export function MainPage() {
 					<p className={s.partnersHeadline}>Наш партнеры</p>
 					<ul className={s.partnersList}>
 						<li className={s.partnersItem}>
-							<img src={legrand} />
+							<img src={bastion} />
 						</li>
 						<li className={s.partnersBorder}></li>
 						<li className={s.partnersItem}>
