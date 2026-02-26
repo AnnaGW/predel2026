@@ -36,12 +36,32 @@ export function MainPage() {
 					</span>
 				</section>
 				<div className={s.systems}>
-					<System imageSrc={surveillance} name="Видеонаблюдение" link="" />
-					<System imageSrc={cable} name="Кабельные системы" link="" />
-					<System imageSrc={access} name="Контроль доступа" link="" />
-					<System imageSrc={signaling} name="Сигнализация" link="" />
-					<System imageSrc={notification} name="Оповещение" link="" />
-					<System imageSrc={vcs} name="Система ВКС" link="" />
+					<System
+						imageSrc={surveillance}
+						name="Видеонаблюдение"
+						link={AppRoute.Surveillance}
+					/>
+					<System
+						imageSrc={cable}
+						name="Кабельные системы"
+						link={AppRoute.Cablesystem}
+					/>
+					<System
+						imageSrc={access}
+						name="Контроль доступа"
+						link={AppRoute.Access}
+					/>
+					<System
+						imageSrc={signaling}
+						name="Сигнализация"
+						link={AppRoute.Signaling}
+					/>
+					<System
+						imageSrc={notification}
+						name="Оповещение"
+						link={AppRoute.Notification}
+					/>
+					<System imageSrc={vcs} name="Система ВКС" link={AppRoute.Vks} />
 				</div>
 			</div>
 			<section className={s.partners}>

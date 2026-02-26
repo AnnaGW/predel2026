@@ -9,6 +9,7 @@
 
 .systemName {
 	padding: 10px 0;
+	padding-bottom: 15px;
 	font-family: Impact, Arial, sans-serif;
 	font-size: 22px;
 	text-decoration: underline;
