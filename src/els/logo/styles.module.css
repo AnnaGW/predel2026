@@ -1,7 +1,7 @@
 .logo {
 	box-sizing: border-box;
 	width: 320px;
-	height: 145px;
+	height: 160px;
 	padding-top: 10px;
 	background-color: var(--bg-color-3);
 }
@@ -13,8 +13,9 @@
 .logoTitle {
 	margin-top: -20px;
 	font-family: Impact, Arial, sans-serif;
-	font-size: 58px;
+	font-size: 68px;
 	font-weight: 900;
+	letter-spacing: 3px;
 	text-align: center;
 	color: var(--secondary-font-color);
 }

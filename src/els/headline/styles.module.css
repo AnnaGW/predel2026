@@ -1,10 +1,10 @@
 .headline {
 	margin-bottom: 20px;
 	padding: 20px;
-	padding-bottom: 30px;
+	padding-top: 10px;
 	background-color: var(--bg-color-3);
 	font-family: Impact, Arial, sans-serif;
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 1;
 	color: var(--secondary-font-color);
 	white-space: nowrap;
