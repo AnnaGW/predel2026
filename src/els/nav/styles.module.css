@@ -5,6 +5,7 @@
 .mainNav {
 	display: flex;
 	justify-content: space-between;
+	width: 590px;
 	color: var(--link-color);
 }
 

@@ -92,7 +92,10 @@ export const Header = (): ReactElement => {
 								<span>
 									Звоните и пишите нам! Мы ответим на все Ваши вопросы. <br />
 								</span>
-								<span>+7 347 262 91 75 / info@predelufa.ru</span>
+								<span>
+									+7 347 262 91 75 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									info@predelufa.ru
+								</span>
 							</div>
 						</div>
 					</div>
