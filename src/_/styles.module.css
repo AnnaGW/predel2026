@@ -17,9 +17,9 @@
 	min-height: 100vh;
 }
 
-.mobilePlank {display: none;}
+/* .mobilePlank {display: none;} */
 
-@media (orientation: portrait) and (max-width: 480px) {
+/* @media (orientation: portrait) and (max-width: 480px) {
 	.mobilePlank {
 		display: block;
 		padding: 20px 10px;
@@ -27,4 +27,4 @@
 		color: var(--secondary-font-color);
 		text-align: center;
 	}
-}
+} */

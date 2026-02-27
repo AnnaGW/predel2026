@@ -63,7 +63,7 @@
 
 .helpHeadline {
 	font-family: Impact, Arial, sans-serif;
-	font-size: 54px;
+	font-size: 50px;
 	line-height: 1;
 	text-decoration: underline;
 }
@@ -173,7 +173,7 @@
 	}
 
 	.helpHeadline {
-		font-size: 56px;
+		text-align: center;
 	}
 
 	.helpDescr {
@@ -220,12 +220,14 @@
 		flex-direction: column;
 	}
 
-	.partners {
+	.partners {		
 		height: auto;
+		padding: 0;
 	}
 
 	.partnersHeadline {
-		margin: 0;
+		margin: 0;		
+		text-align: center;
 	}
 
 	.partnersBorder {

@@ -66,7 +66,9 @@ export function MainPage() {
 			</div>
 			<section className={s.partners}>
 				<div className="container">
-					<p className={s.partnersHeadline}>Наш партнеры</p>
+					<a href={AppRoute.Partners}>
+						<p className={s.partnersHeadline}>Наш партнеры</p>
+					</a>
 					<ul className={s.partnersList}>
 						<li className={s.partnersItem}>
 							<img src={bastion} />

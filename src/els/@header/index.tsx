@@ -88,11 +88,7 @@ export const Header = (): ReactElement => {
 						<Logo />
 						<div className={s.headerNavWrap}>
 							<MainNav currentPage={currentPage} isOpen={isMobMenuOpen} />
-							<div
-								className={cn(s.headerPLank, {
-									[s.none]: url.pathname === AppRoute.MainPage,
-								})}
-							>
+							<div className={cn(s.headerPLank)}>
 								<span>
 									Звоните и пишите нам! Мы ответим на все Ваши вопросы. <br />
 								</span>
@@ -100,14 +96,6 @@ export const Header = (): ReactElement => {
 									+7 347 262 91 75 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									info@predelufa.ru
 								</span>
-							</div>
-							<div
-								className={cn(s.headerMainPlank, {
-									[s.none]: url.pathname !== AppRoute.MainPage,
-								})}
-							>
-								Звоните и пишите нам! <br />
-								Мы ответим на все Ваши вопросы.
 							</div>
 						</div>
 					</div>
