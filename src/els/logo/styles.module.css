@@ -32,6 +32,7 @@
 
 @media (orientation: portrait) and (width < 480px) {
 	.logo {
+		width: 260px;
 		height: auto;
 		padding: 0;
 	}
